@@ -138,10 +138,10 @@ VECTOR("C:/Users/sunlele/Desktop/WorkSpace/VHDL/morder/morder.vwf")
 VECTOR("C:/Users/sunlele/Desktop/WorkSpace/VHDL/morder/db/morder.sim.cvwf")
 {
 	ZOOM{
-		ZBEGIN = 730534547;
-		ZEND = 730677907;
+		ZBEGIN = 730319507;
+		ZEND = 730892947;
 		NUMERATOR = 1290;
-		DENOMINATOR = 143360;
+		DENOMINATOR = 573440;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
