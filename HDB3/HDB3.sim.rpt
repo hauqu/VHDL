@@ -1,0 +1,389 @@
+Simulator report for HDB3
+Mon Jun 28 19:13:02 2021
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 103 nodes    ;
+; Simulation Coverage         ;      29.85 % ;
+; Total Number of Transitions ; 2658         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
+; Device                      ; EP2S15F484C3 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      29.85 % ;
+; Total nodes checked                                 ; 103          ;
+; Total output ports checked                          ; 134          ;
+; Total output ports with complete 1/0-value coverage ; 40           ;
+; Total output ports with no 1/0-value coverage       ; 91           ;
+; Total output ports with no 1-value coverage         ; 92           ;
+; Total output ports with no 0-value coverage         ; 93           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                      ;
++-----------------------+-----------------------+------------------+
+; Node Name             ; Output Port Name      ; Output Port Type ;
++-----------------------+-----------------------+------------------+
+; |hdb3|count0[0]       ; |hdb3|count0[0]       ; regout           ;
+; |hdb3|count0[1]       ; |hdb3|count0[1]       ; regout           ;
+; |hdb3|Add0~1          ; |hdb3|Add0~1          ; sumout           ;
+; |hdb3|Add0~1          ; |hdb3|Add0~2          ; cout             ;
+; |hdb3|Add0~5          ; |hdb3|Add0~5          ; sumout           ;
+; |hdb3|Add0~5          ; |hdb3|Add0~6          ; cout             ;
+; |hdb3|Add0~9          ; |hdb3|Add0~9          ; sumout           ;
+; |hdb3|codeout[0]~reg0 ; |hdb3|codeout[0]~reg0 ; regout           ;
+; |hdb3|codeout[1]~reg0 ; |hdb3|codeout[1]~reg0 ; regout           ;
+; |hdb3|s1[4]           ; |hdb3|s1[4]           ; regout           ;
+; |hdb3|s0[4]           ; |hdb3|s0[4]           ; regout           ;
+; |hdb3|codeout~3       ; |hdb3|codeout~3       ; combout          ;
+; |hdb3|flag1b          ; |hdb3|flag1b          ; regout           ;
+; |hdb3|codeout~4       ; |hdb3|codeout~4       ; combout          ;
+; |hdb3|ds13            ; |hdb3|ds13            ; regout           ;
+; |hdb3|count1          ; |hdb3|count1          ; regout           ;
+; |hdb3|codeoutv[0]     ; |hdb3|codeoutv[0]     ; regout           ;
+; |hdb3|codeoutv[1]     ; |hdb3|codeoutv[1]     ; regout           ;
+; |hdb3|s1~3            ; |hdb3|s1~3            ; combout          ;
+; |hdb3|ds03            ; |hdb3|ds03            ; regout           ;
+; |hdb3|s0~3            ; |hdb3|s0~3            ; combout          ;
+; |hdb3|flag1b~0        ; |hdb3|flag1b~0        ; combout          ;
+; |hdb3|ds12            ; |hdb3|ds12            ; regout           ;
+; |hdb3|count1~2        ; |hdb3|count1~2        ; combout          ;
+; |hdb3|ds02            ; |hdb3|ds02            ; regout           ;
+; |hdb3|ds11            ; |hdb3|ds11            ; regout           ;
+; |hdb3|ds01            ; |hdb3|ds01            ; regout           ;
+; |hdb3|Equal0~1        ; |hdb3|Equal0~1        ; combout          ;
+; |hdb3|Equal0~4        ; |hdb3|Equal0~4        ; combout          ;
+; |hdb3|Equal0~5        ; |hdb3|Equal0~5        ; combout          ;
+; |hdb3|Equal0~6        ; |hdb3|Equal0~6        ; combout          ;
+; |hdb3|count0[29]~96   ; |hdb3|count0[29]~96   ; combout          ;
+; |hdb3|codeoutv~4      ; |hdb3|codeoutv~4      ; combout          ;
+; |hdb3|codeoutv~5      ; |hdb3|codeoutv~5      ; combout          ;
+; |hdb3|codeout[0]      ; |hdb3|codeout[0]      ; padio            ;
+; |hdb3|codeout[1]      ; |hdb3|codeout[1]      ; padio            ;
+; |hdb3|clk             ; |hdb3|clk~corein      ; combout          ;
+; |hdb3|codein          ; |hdb3|codein~corein   ; combout          ;
+; |hdb3|clk~clkctrl     ; |hdb3|clk~clkctrl     ; outclk           ;
+; |hdb3|ds11~feeder     ; |hdb3|ds11~feeder     ; combout          ;
++-----------------------+-----------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------+
+; Missing 1-Value Coverage                               ;
++------------------+------------------+------------------+
+; Node Name        ; Output Port Name ; Output Port Type ;
++------------------+------------------+------------------+
+; |hdb3|count0[12] ; |hdb3|count0[12] ; regout           ;
+; |hdb3|count0[26] ; |hdb3|count0[26] ; regout           ;
+; |hdb3|count0[31] ; |hdb3|count0[31] ; regout           ;
+; |hdb3|count0[3]  ; |hdb3|count0[3]  ; regout           ;
+; |hdb3|count0[29] ; |hdb3|count0[29] ; regout           ;
+; |hdb3|count0[25] ; |hdb3|count0[25] ; regout           ;
+; |hdb3|count0[21] ; |hdb3|count0[21] ; regout           ;
+; |hdb3|count0[28] ; |hdb3|count0[28] ; regout           ;
+; |hdb3|count0[14] ; |hdb3|count0[14] ; regout           ;
+; |hdb3|count0[4]  ; |hdb3|count0[4]  ; regout           ;
+; |hdb3|count0[19] ; |hdb3|count0[19] ; regout           ;
+; |hdb3|count0[9]  ; |hdb3|count0[9]  ; regout           ;
+; |hdb3|count0[23] ; |hdb3|count0[23] ; regout           ;
+; |hdb3|count0[30] ; |hdb3|count0[30] ; regout           ;
+; |hdb3|count0[18] ; |hdb3|count0[18] ; regout           ;
+; |hdb3|count0[6]  ; |hdb3|count0[6]  ; regout           ;
+; |hdb3|count0[16] ; |hdb3|count0[16] ; regout           ;
+; |hdb3|count0[8]  ; |hdb3|count0[8]  ; regout           ;
+; |hdb3|count0[22] ; |hdb3|count0[22] ; regout           ;
+; |hdb3|count0[10] ; |hdb3|count0[10] ; regout           ;
+; |hdb3|count0[24] ; |hdb3|count0[24] ; regout           ;
+; |hdb3|count0[2]  ; |hdb3|count0[2]  ; regout           ;
+; |hdb3|count0[20] ; |hdb3|count0[20] ; regout           ;
+; |hdb3|count0[11] ; |hdb3|count0[11] ; regout           ;
+; |hdb3|count0[27] ; |hdb3|count0[27] ; regout           ;
+; |hdb3|count0[5]  ; |hdb3|count0[5]  ; regout           ;
+; |hdb3|count0[15] ; |hdb3|count0[15] ; regout           ;
+; |hdb3|count0[7]  ; |hdb3|count0[7]  ; regout           ;
+; |hdb3|count0[13] ; |hdb3|count0[13] ; regout           ;
+; |hdb3|count0[17] ; |hdb3|count0[17] ; regout           ;
+; |hdb3|Add0~9     ; |hdb3|Add0~10    ; cout             ;
+; |hdb3|Add0~13    ; |hdb3|Add0~13    ; sumout           ;
+; |hdb3|Add0~13    ; |hdb3|Add0~14    ; cout             ;
+; |hdb3|Add0~17    ; |hdb3|Add0~17    ; sumout           ;
+; |hdb3|Add0~17    ; |hdb3|Add0~18    ; cout             ;
+; |hdb3|Add0~21    ; |hdb3|Add0~21    ; sumout           ;
+; |hdb3|Add0~21    ; |hdb3|Add0~22    ; cout             ;
+; |hdb3|Add0~25    ; |hdb3|Add0~25    ; sumout           ;
+; |hdb3|Add0~25    ; |hdb3|Add0~26    ; cout             ;
+; |hdb3|Add0~29    ; |hdb3|Add0~29    ; sumout           ;
+; |hdb3|Add0~29    ; |hdb3|Add0~30    ; cout             ;
+; |hdb3|Add0~33    ; |hdb3|Add0~33    ; sumout           ;
+; |hdb3|Add0~33    ; |hdb3|Add0~34    ; cout             ;
+; |hdb3|Add0~37    ; |hdb3|Add0~37    ; sumout           ;
+; |hdb3|Add0~37    ; |hdb3|Add0~38    ; cout             ;
+; |hdb3|Add0~41    ; |hdb3|Add0~41    ; sumout           ;
+; |hdb3|Add0~41    ; |hdb3|Add0~42    ; cout             ;
+; |hdb3|Add0~45    ; |hdb3|Add0~45    ; sumout           ;
+; |hdb3|Add0~45    ; |hdb3|Add0~46    ; cout             ;
+; |hdb3|Add0~49    ; |hdb3|Add0~49    ; sumout           ;
+; |hdb3|Add0~49    ; |hdb3|Add0~50    ; cout             ;
+; |hdb3|Add0~53    ; |hdb3|Add0~53    ; sumout           ;
+; |hdb3|Add0~53    ; |hdb3|Add0~54    ; cout             ;
+; |hdb3|Add0~57    ; |hdb3|Add0~57    ; sumout           ;
+; |hdb3|Add0~57    ; |hdb3|Add0~58    ; cout             ;
+; |hdb3|Add0~61    ; |hdb3|Add0~61    ; sumout           ;
+; |hdb3|Add0~61    ; |hdb3|Add0~62    ; cout             ;
+; |hdb3|Add0~65    ; |hdb3|Add0~65    ; sumout           ;
+; |hdb3|Add0~65    ; |hdb3|Add0~66    ; cout             ;
+; |hdb3|Add0~69    ; |hdb3|Add0~69    ; sumout           ;
+; |hdb3|Add0~69    ; |hdb3|Add0~70    ; cout             ;
+; |hdb3|Add0~73    ; |hdb3|Add0~73    ; sumout           ;
+; |hdb3|Add0~73    ; |hdb3|Add0~74    ; cout             ;
+; |hdb3|Add0~77    ; |hdb3|Add0~77    ; sumout           ;
+; |hdb3|Add0~77    ; |hdb3|Add0~78    ; cout             ;
+; |hdb3|Add0~81    ; |hdb3|Add0~81    ; sumout           ;
+; |hdb3|Add0~81    ; |hdb3|Add0~82    ; cout             ;
+; |hdb3|Add0~85    ; |hdb3|Add0~85    ; sumout           ;
+; |hdb3|Add0~85    ; |hdb3|Add0~86    ; cout             ;
+; |hdb3|Add0~89    ; |hdb3|Add0~89    ; sumout           ;
+; |hdb3|Add0~89    ; |hdb3|Add0~90    ; cout             ;
+; |hdb3|Add0~93    ; |hdb3|Add0~93    ; sumout           ;
+; |hdb3|Add0~93    ; |hdb3|Add0~94    ; cout             ;
+; |hdb3|Add0~97    ; |hdb3|Add0~97    ; sumout           ;
+; |hdb3|Add0~97    ; |hdb3|Add0~98    ; cout             ;
+; |hdb3|Add0~101   ; |hdb3|Add0~101   ; sumout           ;
+; |hdb3|Add0~101   ; |hdb3|Add0~102   ; cout             ;
+; |hdb3|Add0~105   ; |hdb3|Add0~105   ; sumout           ;
+; |hdb3|Add0~105   ; |hdb3|Add0~106   ; cout             ;
+; |hdb3|Add0~109   ; |hdb3|Add0~109   ; sumout           ;
+; |hdb3|Add0~109   ; |hdb3|Add0~110   ; cout             ;
+; |hdb3|Add0~113   ; |hdb3|Add0~113   ; sumout           ;
+; |hdb3|Add0~113   ; |hdb3|Add0~114   ; cout             ;
+; |hdb3|Add0~117   ; |hdb3|Add0~117   ; sumout           ;
+; |hdb3|Add0~117   ; |hdb3|Add0~118   ; cout             ;
+; |hdb3|Add0~121   ; |hdb3|Add0~121   ; sumout           ;
+; |hdb3|Add0~121   ; |hdb3|Add0~122   ; cout             ;
+; |hdb3|Add0~125   ; |hdb3|Add0~125   ; sumout           ;
+; |hdb3|Equal0~0   ; |hdb3|Equal0~0   ; combout          ;
+; |hdb3|Equal0~2   ; |hdb3|Equal0~2   ; combout          ;
+; |hdb3|Equal0~3   ; |hdb3|Equal0~3   ; combout          ;
+; |hdb3|clr        ; |hdb3|clr~corein ; combout          ;
++------------------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------+
+; Missing 0-Value Coverage                               ;
++------------------+------------------+------------------+
+; Node Name        ; Output Port Name ; Output Port Type ;
++------------------+------------------+------------------+
+; |hdb3|count0[12] ; |hdb3|count0[12] ; regout           ;
+; |hdb3|count0[26] ; |hdb3|count0[26] ; regout           ;
+; |hdb3|count0[31] ; |hdb3|count0[31] ; regout           ;
+; |hdb3|count0[3]  ; |hdb3|count0[3]  ; regout           ;
+; |hdb3|count0[29] ; |hdb3|count0[29] ; regout           ;
+; |hdb3|count0[25] ; |hdb3|count0[25] ; regout           ;
+; |hdb3|count0[21] ; |hdb3|count0[21] ; regout           ;
+; |hdb3|count0[28] ; |hdb3|count0[28] ; regout           ;
+; |hdb3|count0[14] ; |hdb3|count0[14] ; regout           ;
+; |hdb3|count0[4]  ; |hdb3|count0[4]  ; regout           ;
+; |hdb3|count0[19] ; |hdb3|count0[19] ; regout           ;
+; |hdb3|count0[9]  ; |hdb3|count0[9]  ; regout           ;
+; |hdb3|count0[23] ; |hdb3|count0[23] ; regout           ;
+; |hdb3|count0[30] ; |hdb3|count0[30] ; regout           ;
+; |hdb3|count0[18] ; |hdb3|count0[18] ; regout           ;
+; |hdb3|count0[6]  ; |hdb3|count0[6]  ; regout           ;
+; |hdb3|count0[16] ; |hdb3|count0[16] ; regout           ;
+; |hdb3|count0[8]  ; |hdb3|count0[8]  ; regout           ;
+; |hdb3|count0[22] ; |hdb3|count0[22] ; regout           ;
+; |hdb3|count0[10] ; |hdb3|count0[10] ; regout           ;
+; |hdb3|count0[24] ; |hdb3|count0[24] ; regout           ;
+; |hdb3|count0[2]  ; |hdb3|count0[2]  ; regout           ;
+; |hdb3|count0[20] ; |hdb3|count0[20] ; regout           ;
+; |hdb3|count0[11] ; |hdb3|count0[11] ; regout           ;
+; |hdb3|count0[27] ; |hdb3|count0[27] ; regout           ;
+; |hdb3|count0[5]  ; |hdb3|count0[5]  ; regout           ;
+; |hdb3|count0[15] ; |hdb3|count0[15] ; regout           ;
+; |hdb3|count0[7]  ; |hdb3|count0[7]  ; regout           ;
+; |hdb3|count0[13] ; |hdb3|count0[13] ; regout           ;
+; |hdb3|count0[17] ; |hdb3|count0[17] ; regout           ;
+; |hdb3|Add0~9     ; |hdb3|Add0~10    ; cout             ;
+; |hdb3|Add0~13    ; |hdb3|Add0~13    ; sumout           ;
+; |hdb3|Add0~13    ; |hdb3|Add0~14    ; cout             ;
+; |hdb3|Add0~17    ; |hdb3|Add0~17    ; sumout           ;
+; |hdb3|Add0~17    ; |hdb3|Add0~18    ; cout             ;
+; |hdb3|Add0~21    ; |hdb3|Add0~21    ; sumout           ;
+; |hdb3|Add0~21    ; |hdb3|Add0~22    ; cout             ;
+; |hdb3|Add0~25    ; |hdb3|Add0~25    ; sumout           ;
+; |hdb3|Add0~25    ; |hdb3|Add0~26    ; cout             ;
+; |hdb3|Add0~29    ; |hdb3|Add0~29    ; sumout           ;
+; |hdb3|Add0~29    ; |hdb3|Add0~30    ; cout             ;
+; |hdb3|Add0~33    ; |hdb3|Add0~33    ; sumout           ;
+; |hdb3|Add0~33    ; |hdb3|Add0~34    ; cout             ;
+; |hdb3|Add0~37    ; |hdb3|Add0~37    ; sumout           ;
+; |hdb3|Add0~37    ; |hdb3|Add0~38    ; cout             ;
+; |hdb3|Add0~41    ; |hdb3|Add0~41    ; sumout           ;
+; |hdb3|Add0~41    ; |hdb3|Add0~42    ; cout             ;
+; |hdb3|Add0~45    ; |hdb3|Add0~45    ; sumout           ;
+; |hdb3|Add0~45    ; |hdb3|Add0~46    ; cout             ;
+; |hdb3|Add0~49    ; |hdb3|Add0~49    ; sumout           ;
+; |hdb3|Add0~49    ; |hdb3|Add0~50    ; cout             ;
+; |hdb3|Add0~53    ; |hdb3|Add0~53    ; sumout           ;
+; |hdb3|Add0~53    ; |hdb3|Add0~54    ; cout             ;
+; |hdb3|Add0~57    ; |hdb3|Add0~57    ; sumout           ;
+; |hdb3|Add0~57    ; |hdb3|Add0~58    ; cout             ;
+; |hdb3|Add0~61    ; |hdb3|Add0~61    ; sumout           ;
+; |hdb3|Add0~61    ; |hdb3|Add0~62    ; cout             ;
+; |hdb3|Add0~65    ; |hdb3|Add0~65    ; sumout           ;
+; |hdb3|Add0~65    ; |hdb3|Add0~66    ; cout             ;
+; |hdb3|Add0~69    ; |hdb3|Add0~69    ; sumout           ;
+; |hdb3|Add0~69    ; |hdb3|Add0~70    ; cout             ;
+; |hdb3|Add0~73    ; |hdb3|Add0~73    ; sumout           ;
+; |hdb3|Add0~73    ; |hdb3|Add0~74    ; cout             ;
+; |hdb3|Add0~77    ; |hdb3|Add0~77    ; sumout           ;
+; |hdb3|Add0~77    ; |hdb3|Add0~78    ; cout             ;
+; |hdb3|Add0~81    ; |hdb3|Add0~81    ; sumout           ;
+; |hdb3|Add0~81    ; |hdb3|Add0~82    ; cout             ;
+; |hdb3|Add0~85    ; |hdb3|Add0~85    ; sumout           ;
+; |hdb3|Add0~85    ; |hdb3|Add0~86    ; cout             ;
+; |hdb3|Add0~89    ; |hdb3|Add0~89    ; sumout           ;
+; |hdb3|Add0~89    ; |hdb3|Add0~90    ; cout             ;
+; |hdb3|Add0~93    ; |hdb3|Add0~93    ; sumout           ;
+; |hdb3|Add0~93    ; |hdb3|Add0~94    ; cout             ;
+; |hdb3|Add0~97    ; |hdb3|Add0~97    ; sumout           ;
+; |hdb3|Add0~97    ; |hdb3|Add0~98    ; cout             ;
+; |hdb3|Add0~101   ; |hdb3|Add0~101   ; sumout           ;
+; |hdb3|Add0~101   ; |hdb3|Add0~102   ; cout             ;
+; |hdb3|Add0~105   ; |hdb3|Add0~105   ; sumout           ;
+; |hdb3|Add0~105   ; |hdb3|Add0~106   ; cout             ;
+; |hdb3|Add0~109   ; |hdb3|Add0~109   ; sumout           ;
+; |hdb3|Add0~109   ; |hdb3|Add0~110   ; cout             ;
+; |hdb3|Add0~113   ; |hdb3|Add0~113   ; sumout           ;
+; |hdb3|Add0~113   ; |hdb3|Add0~114   ; cout             ;
+; |hdb3|Add0~117   ; |hdb3|Add0~117   ; sumout           ;
+; |hdb3|Add0~117   ; |hdb3|Add0~118   ; cout             ;
+; |hdb3|Add0~121   ; |hdb3|Add0~121   ; sumout           ;
+; |hdb3|Add0~121   ; |hdb3|Add0~122   ; cout             ;
+; |hdb3|Add0~125   ; |hdb3|Add0~125   ; sumout           ;
+; |hdb3|firstv     ; |hdb3|firstv     ; regout           ;
+; |hdb3|firstv~0   ; |hdb3|firstv~0   ; combout          ;
+; |hdb3|Equal0~0   ; |hdb3|Equal0~0   ; combout          ;
+; |hdb3|Equal0~2   ; |hdb3|Equal0~2   ; combout          ;
+; |hdb3|Equal0~3   ; |hdb3|Equal0~3   ; combout          ;
++------------------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Mon Jun 28 19:13:02 2021
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off HDB3 -c HDB3
+Info: Using vector source file "C:/Users/sunlele/Desktop/WorkSpace/VHDL/HDB3/HDB3.vwf"
+Info: Inverted registers were found during simulation
+    Info: Register: |hdb3|flag1b
+    Info: Register: |hdb3|count1
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      29.85 %
+Info: Number of transitions in simulation is 2658
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 158 megabytes
+    Info: Processing ended: Mon Jun 28 19:13:02 2021
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

@@ -6,7 +6,7 @@ port(
 	clk : in std_logic;
 	en : in std_logic;
 	D0:in std_logic_vector(3 downto 0);
-	y:out std_logic_vector(3 downto 0)
+	y:out std_logic
 );
 end morder;
 architecture rt1 of morder is
@@ -22,12 +22,8 @@ begin
 		D2(2):=D1(3);
 		D2(1):=D1(2);
 		D2(0):=D1(1);
-		D1(3):=D2(3);
-		D1(2):=D2(2);
-		D1(1):=D2(1);
-		D1(0):=D2(0);
 		end if;
-	y<=D1;
+	y<=D1(2);
 	end process;
 end rt1;
 
