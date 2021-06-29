@@ -1,0 +1,251 @@
+Simulator report for pcmencode
+Tue Jun 29 21:55:56 2021
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 ms       ;
+; Simulation Netlist Size     ; 55 nodes     ;
+; Simulation Coverage         ;      27.78 % ;
+; Total Number of Transitions ; 8843         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
+; Device                      ; EP2S15F484C3 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      27.78 % ;
+; Total nodes checked                                 ; 55           ;
+; Total output ports checked                          ; 54           ;
+; Total output ports with complete 1/0-value coverage ; 15           ;
+; Total output ports with no 1/0-value coverage       ; 36           ;
+; Total output ports with no 1-value coverage         ; 36           ;
+; Total output ports with no 0-value coverage         ; 39           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                        ;
++------------------------+------------------------+------------------+
+; Node Name              ; Output Port Name       ; Output Port Type ;
++------------------------+------------------------+------------------+
+; |pcmencode|b~9         ; |pcmencode|b~9         ; combout          ;
+; |pcmencode|b~13        ; |pcmencode|b~13        ; combout          ;
+; |pcmencode|b~reg0      ; |pcmencode|b~reg0      ; regout           ;
+; |pcmencode|count[0]    ; |pcmencode|count[0]    ; regout           ;
+; |pcmencode|count[1]    ; |pcmencode|count[1]    ; regout           ;
+; |pcmencode|count[2]    ; |pcmencode|count[2]    ; regout           ;
+; |pcmencode|Equal0~0    ; |pcmencode|Equal0~0    ; combout          ;
+; |pcmencode|b~17        ; |pcmencode|b~17        ; combout          ;
+; |pcmencode|count[1]~0  ; |pcmencode|count[1]~0  ; combout          ;
+; |pcmencode|count[2]~1  ; |pcmencode|count[2]~1  ; combout          ;
+; |pcmencode|count[0]~2  ; |pcmencode|count[0]~2  ; combout          ;
+; |pcmencode|b           ; |pcmencode|b           ; padio            ;
+; |pcmencode|en          ; |pcmencode|en~corein   ; combout          ;
+; |pcmencode|clk         ; |pcmencode|clk~corein  ; combout          ;
+; |pcmencode|clk~clkctrl ; |pcmencode|clk~clkctrl ; outclk           ;
++------------------------+------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++---------------------------------------------------------------+
+; Missing 1-Value Coverage                                      ;
++------------------+-------------------------+------------------+
+; Node Name        ; Output Port Name        ; Output Port Type ;
++------------------+-------------------------+------------------+
+; |pcmencode|c~46  ; |pcmencode|c~46         ; combout          ;
+; |pcmencode|c~47  ; |pcmencode|c~47         ; combout          ;
+; |pcmencode|c~48  ; |pcmencode|c~48         ; combout          ;
+; |pcmencode|c~49  ; |pcmencode|c~49         ; combout          ;
+; |pcmencode|c[0]  ; |pcmencode|c[0]         ; regout           ;
+; |pcmencode|c~50  ; |pcmencode|c~50         ; combout          ;
+; |pcmencode|c~51  ; |pcmencode|c~51         ; combout          ;
+; |pcmencode|c~52  ; |pcmencode|c~52         ; combout          ;
+; |pcmencode|c~53  ; |pcmencode|c~53         ; combout          ;
+; |pcmencode|c~54  ; |pcmencode|c~54         ; combout          ;
+; |pcmencode|c~55  ; |pcmencode|c~55         ; combout          ;
+; |pcmencode|c[3]  ; |pcmencode|c[3]         ; regout           ;
+; |pcmencode|c~56  ; |pcmencode|c~56         ; combout          ;
+; |pcmencode|c~57  ; |pcmencode|c~57         ; combout          ;
+; |pcmencode|c~58  ; |pcmencode|c~58         ; combout          ;
+; |pcmencode|c[4]  ; |pcmencode|c[4]         ; regout           ;
+; |pcmencode|c~59  ; |pcmencode|c~59         ; combout          ;
+; |pcmencode|c~60  ; |pcmencode|c~60         ; combout          ;
+; |pcmencode|c~61  ; |pcmencode|c~61         ; combout          ;
+; |pcmencode|c[1]  ; |pcmencode|c[1]         ; regout           ;
+; |pcmencode|c~62  ; |pcmencode|c~62         ; combout          ;
+; |pcmencode|c~63  ; |pcmencode|c~63         ; combout          ;
+; |pcmencode|c~64  ; |pcmencode|c~64         ; combout          ;
+; |pcmencode|c~65  ; |pcmencode|c~65         ; combout          ;
+; |pcmencode|d[7]  ; |pcmencode|d[7]~corein  ; combout          ;
+; |pcmencode|d[8]  ; |pcmencode|d[8]~corein  ; combout          ;
+; |pcmencode|d[5]  ; |pcmencode|d[5]~corein  ; combout          ;
+; |pcmencode|d[6]  ; |pcmencode|d[6]~corein  ; combout          ;
+; |pcmencode|d[4]  ; |pcmencode|d[4]~corein  ; combout          ;
+; |pcmencode|d[3]  ; |pcmencode|d[3]~corein  ; combout          ;
+; |pcmencode|d[10] ; |pcmencode|d[10]~corein ; combout          ;
+; |pcmencode|d[11] ; |pcmencode|d[11]~corein ; combout          ;
+; |pcmencode|d[9]  ; |pcmencode|d[9]~corein  ; combout          ;
+; |pcmencode|d[1]  ; |pcmencode|d[1]~corein  ; combout          ;
+; |pcmencode|d[2]  ; |pcmencode|d[2]~corein  ; combout          ;
+; |pcmencode|d[12] ; |pcmencode|d[12]~corein ; combout          ;
++------------------+-------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++---------------------------------------------------------------+
+; Missing 0-Value Coverage                                      ;
++------------------+-------------------------+------------------+
+; Node Name        ; Output Port Name        ; Output Port Type ;
++------------------+-------------------------+------------------+
+; |pcmencode|c~46  ; |pcmencode|c~46         ; combout          ;
+; |pcmencode|c~47  ; |pcmencode|c~47         ; combout          ;
+; |pcmencode|c[2]  ; |pcmencode|c[2]         ; regout           ;
+; |pcmencode|c~48  ; |pcmencode|c~48         ; combout          ;
+; |pcmencode|c~49  ; |pcmencode|c~49         ; combout          ;
+; |pcmencode|c[0]  ; |pcmencode|c[0]         ; regout           ;
+; |pcmencode|c~50  ; |pcmencode|c~50         ; combout          ;
+; |pcmencode|c~51  ; |pcmencode|c~51         ; combout          ;
+; |pcmencode|c~52  ; |pcmencode|c~52         ; combout          ;
+; |pcmencode|c~53  ; |pcmencode|c~53         ; combout          ;
+; |pcmencode|c~54  ; |pcmencode|c~54         ; combout          ;
+; |pcmencode|c~55  ; |pcmencode|c~55         ; combout          ;
+; |pcmencode|c[3]  ; |pcmencode|c[3]         ; regout           ;
+; |pcmencode|c~56  ; |pcmencode|c~56         ; combout          ;
+; |pcmencode|c~57  ; |pcmencode|c~57         ; combout          ;
+; |pcmencode|c[6]  ; |pcmencode|c[6]         ; regout           ;
+; |pcmencode|c~58  ; |pcmencode|c~58         ; combout          ;
+; |pcmencode|c[4]  ; |pcmencode|c[4]         ; regout           ;
+; |pcmencode|c~59  ; |pcmencode|c~59         ; combout          ;
+; |pcmencode|c[5]  ; |pcmencode|c[5]         ; regout           ;
+; |pcmencode|c~60  ; |pcmencode|c~60         ; combout          ;
+; |pcmencode|c~61  ; |pcmencode|c~61         ; combout          ;
+; |pcmencode|c[1]  ; |pcmencode|c[1]         ; regout           ;
+; |pcmencode|c~62  ; |pcmencode|c~62         ; combout          ;
+; |pcmencode|c~63  ; |pcmencode|c~63         ; combout          ;
+; |pcmencode|c~64  ; |pcmencode|c~64         ; combout          ;
+; |pcmencode|c~65  ; |pcmencode|c~65         ; combout          ;
+; |pcmencode|d[7]  ; |pcmencode|d[7]~corein  ; combout          ;
+; |pcmencode|d[8]  ; |pcmencode|d[8]~corein  ; combout          ;
+; |pcmencode|d[5]  ; |pcmencode|d[5]~corein  ; combout          ;
+; |pcmencode|d[6]  ; |pcmencode|d[6]~corein  ; combout          ;
+; |pcmencode|d[4]  ; |pcmencode|d[4]~corein  ; combout          ;
+; |pcmencode|d[3]  ; |pcmencode|d[3]~corein  ; combout          ;
+; |pcmencode|d[10] ; |pcmencode|d[10]~corein ; combout          ;
+; |pcmencode|d[11] ; |pcmencode|d[11]~corein ; combout          ;
+; |pcmencode|d[9]  ; |pcmencode|d[9]~corein  ; combout          ;
+; |pcmencode|d[1]  ; |pcmencode|d[1]~corein  ; combout          ;
+; |pcmencode|d[2]  ; |pcmencode|d[2]~corein  ; combout          ;
+; |pcmencode|d[12] ; |pcmencode|d[12]~corein ; combout          ;
++------------------+-------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Tue Jun 29 21:55:56 2021
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off pcmencode -c pcmencode
+Info: Using vector source file "C:/Users/sunlele/Desktop/WorkSpace/VHDL/PCM/pcmencode/pcmencode.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      27.78 %
+Info: Number of transitions in simulation is 8843
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 158 megabytes
+    Info: Processing ended: Tue Jun 29 21:55:56 2021
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
