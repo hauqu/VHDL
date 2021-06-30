@@ -1,5 +1,5 @@
 Flow report for HDB3
-Mon Jun 28 19:12:03 2021
+Wed Jun 30 10:51:32 2021
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -38,14 +38,14 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +-------------------------------+----------------------------------------------+
-; Flow Status                   ; Successful - Mon Jun 28 19:12:03 2021        ;
+; Flow Status                   ; Successful - Wed Jun 30 10:51:32 2021        ;
 ; Quartus II Version            ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
 ; Revision Name                 ; HDB3                                         ;
 ; Top-level Entity Name         ; hdb3                                         ;
 ; Family                        ; Stratix II                                   ;
 ; Met timing requirements       ; Yes                                          ;
 ; Logic utilization             ; < 1 %                                        ;
-;     Combinational ALUTs       ; 49 / 12,480 ( < 1 % )                        ;
+;     Combinational ALUTs       ; 48 / 12,480 ( < 1 % )                        ;
 ;     Dedicated logic registers ; 47 / 12,480 ( < 1 % )                        ;
 ; Total registers               ; 47                                           ;
 ; Total pins                    ; 5 / 343 ( 1 % )                              ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/28/2021 19:11:56 ;
+; Start date & time ; 06/30/2021 10:51:26 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; HDB3                ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +------------------------------------+--------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                          ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 49410873899436.162487871606552 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 49410873899436.162502148603824 ; --            ; --          ; --             ;
 ; PARTITION_COLOR                    ; 16764057                       ; --            ; --          ; Top            ;
 ; PARTITION_NETLIST_TYPE             ; SOURCE                         ; --            ; --          ; Top            ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                            ; --            ; --          ; eda_blast_fpga ;
@@ -88,10 +88,10 @@ applicable agreement for further details.
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 247 MB              ; 00:00:01                           ;
-; Fitter                  ; 00:00:02     ; 1.0                     ; 287 MB              ; 00:00:02                           ;
+; Fitter                  ; 00:00:03     ; 1.0                     ; 287 MB              ; 00:00:02                           ;
 ; Assembler               ; 00:00:02     ; 1.0                     ; 244 MB              ; 00:00:01                           ;
 ; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 176 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:05     ; --                      ; --                  ; 00:00:04                           ;
+; Total                   ; 00:00:06     ; --                      ; --                  ; 00:00:04                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

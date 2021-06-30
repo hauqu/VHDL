@@ -42,16 +42,6 @@ SIGNAL("clk")
 	PARENT = "";
 }
 
-SIGNAL("clr")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
 SIGNAL("codein")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -92,6 +82,16 @@ SIGNAL("codeout[0]")
 	PARENT = "codeout";
 }
 
+SIGNAL("clr")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
 TRANSITION_LIST("clk")
 {
 	NODE
@@ -103,16 +103,6 @@ TRANSITION_LIST("clk")
 			LEVEL 0 FOR 5.0;
 			LEVEL 1 FOR 5.0;
 		}
-	}
-}
-
-TRANSITION_LIST("clr")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 990.0;
 	}
 }
 
@@ -172,6 +162,15 @@ TRANSITION_LIST("codeout[0]")
 	}
 }
 
+TRANSITION_LIST("clr")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
 DISPLAY_LINE
 {
 	CHANNEL = "clk";
@@ -183,7 +182,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "clr";
+	CHANNEL = "codein";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 1;
@@ -192,21 +191,12 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "codein";
+	CHANNEL = "codeout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 2;
 	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "codeout";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
-	TREE_INDEX = 3;
-	TREE_LEVEL = 0;
-	CHILDREN = 4, 5;
+	CHILDREN = 3, 4;
 }
 
 DISPLAY_LINE
@@ -214,9 +204,9 @@ DISPLAY_LINE
 	CHANNEL = "codeout[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
-	TREE_INDEX = 4;
+	TREE_INDEX = 3;
 	TREE_LEVEL = 1;
-	PARENT = 3;
+	PARENT = 2;
 }
 
 DISPLAY_LINE
@@ -224,9 +214,18 @@ DISPLAY_LINE
 	CHANNEL = "codeout[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
-	TREE_INDEX = 5;
+	TREE_INDEX = 4;
 	TREE_LEVEL = 1;
-	PARENT = 3;
+	PARENT = 2;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "clr";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 5;
+	TREE_LEVEL = 0;
 }
 
 TIME_BAR

@@ -1,5 +1,5 @@
 Fitter report for HDB3
-Mon Jun 28 19:12:00 2021
+Wed Jun 30 10:51:30 2021
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -65,7 +65,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Fitter Summary                                                               ;
 +-------------------------------+----------------------------------------------+
-; Fitter Status                 ; Successful - Mon Jun 28 19:12:00 2021        ;
+; Fitter Status                 ; Successful - Wed Jun 30 10:51:30 2021        ;
 ; Quartus II Version            ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
 ; Revision Name                 ; HDB3                                         ;
 ; Top-level Entity Name         ; hdb3                                         ;
@@ -73,7 +73,7 @@ applicable agreement for further details.
 ; Device                        ; EP2S15F484C3                                 ;
 ; Timing Models                 ; Final                                        ;
 ; Logic utilization             ; < 1 %                                        ;
-;     Combinational ALUTs       ; 49 / 12,480 ( < 1 % )                        ;
+;     Combinational ALUTs       ; 48 / 12,480 ( < 1 % )                        ;
 ;     Dedicated logic registers ; 47 / 12,480 ( < 1 % )                        ;
 ; Total registers               ; 47                                           ;
 ; Total pins                    ; 5 / 343 ( 1 % )                              ;
@@ -164,8 +164,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                    ; Value              ;
 +-------------------------+--------------------+
 ; Placement               ;                    ;
-;     -- Requested        ; 0 / 101 ( 0.00 % ) ;
-;     -- Achieved         ; 0 / 101 ( 0.00 % ) ;
+;     -- Requested        ; 0 / 100 ( 0.00 % ) ;
+;     -- Achieved         ; 0 / 100 ( 0.00 % ) ;
 ;                         ;                    ;
 ; Routing (by Connection) ;                    ;
 ;     -- Requested        ; 0 / 0 ( 0.00 % )   ;
@@ -187,7 +187,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +----------------+---------+-------------------+-------------------------+-------------------+
-; Top            ; 101     ; 0                 ; N/A                     ; Source File       ;
+; Top            ; 100     ; 0                 ; N/A                     ; Source File       ;
 +----------------+---------+-------------------+-------------------------+-------------------+
 
 
@@ -202,32 +202,32 @@ The pin-out file can be found in C:/Users/sunlele/Desktop/WorkSpace/VHDL/HDB3/HD
 +-----------------------------------------------------------------------------------+-----------------------+
 ; Resource                                                                          ; Usage                 ;
 +-----------------------------------------------------------------------------------+-----------------------+
-; Combinational ALUTs                                                               ; 49 / 12,480 ( < 1 % ) ;
+; Combinational ALUTs                                                               ; 48 / 12,480 ( < 1 % ) ;
 ; Dedicated logic registers                                                         ; 47 / 12,480 ( < 1 % ) ;
 ;                                                                                   ;                       ;
 ; Combinational ALUT usage by number of inputs                                      ;                       ;
 ;     -- 7 input functions                                                          ; 0                     ;
-;     -- 6 input functions                                                          ; 2                     ;
+;     -- 6 input functions                                                          ; 1                     ;
 ;     -- 5 input functions                                                          ; 9                     ;
 ;     -- 4 input functions                                                          ; 1                     ;
 ;     -- <=3 input functions                                                        ; 37                    ;
 ;                                                                                   ;                       ;
 ; Combinational ALUTs by mode                                                       ;                       ;
-;     -- normal mode                                                                ; 17                    ;
+;     -- normal mode                                                                ; 16                    ;
 ;     -- extended LUT mode                                                          ; 0                     ;
 ;     -- arithmetic mode                                                            ; 32                    ;
 ;     -- shared arithmetic mode                                                     ; 0                     ;
 ;                                                                                   ;                       ;
-; Logic utilization                                                                 ; 56 / 12,480 ( < 1 % ) ;
+; Logic utilization                                                                 ; 54 / 12,480 ( < 1 % ) ;
 ;     -- Difficulty Clustering Design                                               ; Low                   ;
-;     -- Combinational ALUT/register pairs used in final Placement                  ; 55                    ;
-;         -- Combinational with no register                                         ; 8                     ;
+;     -- Combinational ALUT/register pairs used in final Placement                  ; 54                    ;
+;         -- Combinational with no register                                         ; 7                     ;
 ;         -- Register only                                                          ; 6                     ;
 ;         -- Combinational with a register                                          ; 41                    ;
 ;     -- Estimated pairs recoverable by pairing ALUTs and registers as design grows ; -3                    ;
-;     -- Estimated Combinational ALUT/register pairs unavailable                    ; 4                     ;
+;     -- Estimated Combinational ALUT/register pairs unavailable                    ; 3                     ;
 ;         -- Unavailable due to unpartnered 7 LUTs                                  ; 0                     ;
-;         -- Unavailable due to unpartnered 6 LUTs                                  ; 2                     ;
+;         -- Unavailable due to unpartnered 6 LUTs                                  ; 1                     ;
 ;         -- Unavailable due to unpartnered 5 LUTs                                  ; 2                     ;
 ;         -- Unavailable due to LAB-wide signal conflicts                           ; 0                     ;
 ;         -- Unavailable due to LAB input limits                                    ; 0                     ;
@@ -236,9 +236,9 @@ The pin-out file can be found in C:/Users/sunlele/Desktop/WorkSpace/VHDL/HDB3/HD
 ;     -- Dedicated logic registers                                                  ; 47 / 12,480 ( < 1 % ) ;
 ;     -- I/O registers                                                              ; 0 / 1,930 ( 0 % )     ;
 ;                                                                                   ;                       ;
-; ALMs:  partially or completely used                                               ; 30 / 6,240 ( < 1 % )  ;
+; ALMs:  partially or completely used                                               ; 29 / 6,240 ( < 1 % )  ;
 ;                                                                                   ;                       ;
-; Total LABs:  partially or completely used                                         ; 9 / 780 ( 1 % )       ;
+; Total LABs:  partially or completely used                                         ; 8 / 780 ( 1 % )       ;
 ;                                                                                   ;                       ;
 ; User inserted logic elements                                                      ; 0                     ;
 ; Virtual pins                                                                      ; 0                     ;
@@ -263,10 +263,10 @@ The pin-out file can be found in C:/Users/sunlele/Desktop/WorkSpace/VHDL/HDB3/HD
 ; Peak interconnect usage (total/H/V)                                               ; 0% / 0% / 0%          ;
 ; Maximum fan-out node                                                              ; clk~clkctrl           ;
 ; Maximum fan-out                                                                   ; 47                    ;
-; Highest non-global fan-out signal                                                 ; count0[29]~96         ;
-; Highest non-global fan-out                                                        ; 32                    ;
-; Total fan-out                                                                     ; 268                   ;
-; Average fan-out                                                                   ; 2.58                  ;
+; Highest non-global fan-out signal                                                 ; clr                   ;
+; Highest non-global fan-out                                                        ; 34                    ;
+; Total fan-out                                                                     ; 297                   ;
+; Average fan-out                                                                   ; 2.86                  ;
 +-----------------------------------------------------------------------------------+-----------------------+
 *  Register count does not include registers inside block RAM or DSP blocks.
 
@@ -278,8 +278,8 @@ The pin-out file can be found in C:/Users/sunlele/Desktop/WorkSpace/VHDL/HDB3/HD
 ; Name   ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
 +--------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 ; clk    ; N20   ; 1        ; 0            ; 10           ; 1           ; 1                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; clr    ; D8    ; 4        ; 34           ; 27           ; 0           ; 3                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; codein ; E7    ; 4        ; 37           ; 27           ; 0           ; 3                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; clr    ; D6    ; 4        ; 35           ; 27           ; 0           ; 34                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; codein ; F8    ; 4        ; 35           ; 27           ; 1           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 +--------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
@@ -288,8 +288,8 @@ The pin-out file can be found in C:/Users/sunlele/Desktop/WorkSpace/VHDL/HDB3/HD
 +------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+
 ; Name       ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Output Enable Register ; Power Up High ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Location assigned by ; Load ;
 +------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+
-; codeout[0] ; E9    ; 4        ; 33           ; 27           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; codeout[1] ; H5    ; 5        ; 40           ; 21           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 12mA             ; Off         ; Fitter               ; 0 pF ;
+; codeout[0] ; U8    ; 7        ; 35           ; 0            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; codeout[1] ; K1    ; 5        ; 40           ; 17           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 12mA             ; Off         ; Fitter               ; 0 pF ;
 +------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+
 
 
@@ -301,10 +301,10 @@ The pin-out file can be found in C:/Users/sunlele/Desktop/WorkSpace/VHDL/HDB3/HD
 ; 1        ; 1 / 40 ( 3 % ) ; 3.3V          ; --           ;
 ; 2        ; 0 / 44 ( 0 % ) ; 3.3V          ; --           ;
 ; 3        ; 1 / 50 ( 2 % ) ; 3.3V          ; --           ;
-; 4        ; 3 / 35 ( 9 % ) ; 3.3V          ; --           ;
+; 4        ; 2 / 35 ( 6 % ) ; 3.3V          ; --           ;
 ; 5        ; 1 / 44 ( 2 % ) ; 3.3V          ; --           ;
 ; 6        ; 0 / 40 ( 0 % ) ; 3.3V          ; --           ;
-; 7        ; 0 / 34 ( 0 % ) ; 3.3V          ; --           ;
+; 7        ; 1 / 34 ( 3 % ) ; 3.3V          ; --           ;
 ; 8        ; 0 / 43 ( 0 % ) ; 3.3V          ; --           ;
 ; 9        ; 0 / 6 ( 0 % )  ; 3.3V          ; --           ;
 ; 10       ; 0 / 6 ( 0 % )  ; 3.3V          ; --           ;
@@ -431,9 +431,9 @@ The pin-out file can be found in C:/Users/sunlele/Desktop/WorkSpace/VHDL/HDB3/HD
 ; D3       ; 287        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D4       ; 278        ; 4        ; ^MSEL1                   ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; D5       ; 283        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; D6       ; 293        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; D6       ; 293        ; 4        ; clr                      ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; D7       ;            ; 4        ; VREFB4                   ; power  ;              ;         ; --         ;                 ; --       ; --           ;
-; D8       ; 297        ; 4        ; clr                      ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; D8       ; 297        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D9       ;            ; 4        ; VREFB4                   ; power  ;              ;         ; --         ;                 ; --       ; --           ;
 ; D10      ; 322        ; 9        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D11      ; 337        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -454,9 +454,9 @@ The pin-out file can be found in C:/Users/sunlele/Desktop/WorkSpace/VHDL/HDB3/HD
 ; E4       ; 272        ; 5        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; E5       ; 280        ; 4        ; ^MSEL0                   ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; E6       ; 281        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; E7       ; 289        ; 4        ; codein                   ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; E7       ; 289        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E8       ; 298        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; E9       ; 301        ; 4        ; codeout[0]               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; E9       ; 301        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E10      ; 312        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E11      ; 335        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E12      ; 339        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -477,7 +477,7 @@ The pin-out file can be found in C:/Users/sunlele/Desktop/WorkSpace/VHDL/HDB3/HD
 ; F5       ; 268        ; 5        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; F6       ; 288        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F7       ; 296        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; F8       ; 294        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; F8       ; 294        ; 4        ; codein                   ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; F9       ; 300        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F10      ;            ;          ; GNDA_PLL5                ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; F11      ;            ;          ; GNDA_PLL5                ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -518,7 +518,7 @@ The pin-out file can be found in C:/Users/sunlele/Desktop/WorkSpace/VHDL/HDB3/HD
 ; H2       ; 249        ; 5        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H3       ; 259        ; 5        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H4       ; 257        ; 5        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; H5       ; 254        ; 5        ; codeout[1]               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; H5       ; 254        ; 5        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H6       ; 252        ; 5        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H7       ; 284        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H8       ;            ;          ; VCCINT                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -558,7 +558,7 @@ The pin-out file can be found in C:/Users/sunlele/Desktop/WorkSpace/VHDL/HDB3/HD
 ; J20      ; 30         ; 2        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; J21      ; 28         ; 2        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; J22      ;            ;          ; GND                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; K1       ; 239        ; 5        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; K1       ; 239        ; 5        ; codeout[1]               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; K2       ; 237        ; 5        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; K3       ; 243        ; 5        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; K4       ; 241        ; 5        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -719,7 +719,7 @@ The pin-out file can be found in C:/Users/sunlele/Desktop/WorkSpace/VHDL/HDB3/HD
 ; U5       ; 204        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; U6       ; 179        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; U7       ; 180        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; U8       ; 173        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; U8       ; 173        ; 7        ; codeout[0]               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; U9       ; 171        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; U10      ; 158        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; U11      ;            ;          ; VCCD_PLL6                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -847,7 +847,7 @@ Note: User assignments will override these defaults. The user specified values a
 ; Compilation Hierarchy Node ; Combinational ALUTs ; ALMs    ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M512s ; M4Ks ; M-RAMs ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Combinational with no register ; Register-Only      ; Combinational with a register ; Full Hierarchy Name ; Library Name ;
 ;                            ;                     ;         ;                           ;               ;                   ;       ;      ;        ;              ;         ;           ;           ;      ;              ; ALUT/register pair             ; ALUT/register pair ; ALUT/register pair            ;                     ;              ;
 +----------------------------+---------------------+---------+---------------------------+---------------+-------------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------------------------+--------------------+-------------------------------+---------------------+--------------+
-; |hdb3                      ; 49 (49)             ; 30 (30) ; 47 (47)                   ; 0 (0)         ; 0                 ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 5    ; 0            ; 8 (8)                          ; 6 (6)              ; 41 (41)                       ; |hdb3               ; work         ;
+; |hdb3                      ; 48 (48)             ; 29 (29) ; 47 (47)                   ; 0 (0)         ; 0                 ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 5    ; 0            ; 7 (7)                          ; 6 (6)              ; 41 (41)                       ; |hdb3               ; work         ;
 +----------------------------+---------------------+---------+---------------------------+---------------+-------------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------------------------+--------------------+-------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -865,31 +865,62 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------+----------+---------------+---------------+-----------------------+-----+------+---------+----------+------------+
 
 
-+----------------------------------------------------+
-; Pad To Core Delay Chain Fanout                     ;
-+----------------------+-------------------+---------+
-; Source Pin / Fanout  ; Pad To Core Index ; Setting ;
-+----------------------+-------------------+---------+
-; clk                  ;                   ;         ;
-; codein               ;                   ;         ;
-;      - count0[29]~96 ; 0                 ; 7       ;
-;      - codeoutv~4    ; 0                 ; 7       ;
-;      - codeoutv~5    ; 0                 ; 7       ;
-; clr                  ;                   ;         ;
-;      - count0[29]~96 ; 0                 ; 7       ;
-;      - codeoutv~4    ; 0                 ; 7       ;
-;      - codeoutv~5    ; 0                 ; 7       ;
-+----------------------+-------------------+---------+
++---------------------------------------------------+
+; Pad To Core Delay Chain Fanout                    ;
++---------------------+-------------------+---------+
+; Source Pin / Fanout ; Pad To Core Index ; Setting ;
++---------------------+-------------------+---------+
+; clk                 ;                   ;         ;
+; codein              ;                   ;         ;
+;      - codeoutv~2   ; 0                 ; 7       ;
+;      - codeoutv~3   ; 0                 ; 7       ;
+; clr                 ;                   ;         ;
+;      - count0[28]   ; 0                 ; 7       ;
+;      - count0[29]   ; 0                 ; 7       ;
+;      - count0[30]   ; 0                 ; 7       ;
+;      - count0[31]   ; 0                 ; 7       ;
+;      - count0[0]    ; 0                 ; 7       ;
+;      - count0[1]    ; 0                 ; 7       ;
+;      - count0[2]    ; 0                 ; 7       ;
+;      - count0[3]    ; 0                 ; 7       ;
+;      - count0[4]    ; 0                 ; 7       ;
+;      - count0[5]    ; 0                 ; 7       ;
+;      - count0[6]    ; 0                 ; 7       ;
+;      - count0[7]    ; 0                 ; 7       ;
+;      - count0[8]    ; 0                 ; 7       ;
+;      - count0[9]    ; 0                 ; 7       ;
+;      - count0[10]   ; 0                 ; 7       ;
+;      - count0[11]   ; 0                 ; 7       ;
+;      - count0[12]   ; 0                 ; 7       ;
+;      - count0[13]   ; 0                 ; 7       ;
+;      - count0[14]   ; 0                 ; 7       ;
+;      - count0[15]   ; 0                 ; 7       ;
+;      - count0[16]   ; 0                 ; 7       ;
+;      - count0[17]   ; 0                 ; 7       ;
+;      - count0[18]   ; 0                 ; 7       ;
+;      - count0[19]   ; 0                 ; 7       ;
+;      - count0[20]   ; 0                 ; 7       ;
+;      - count0[21]   ; 0                 ; 7       ;
+;      - count0[22]   ; 0                 ; 7       ;
+;      - count0[23]   ; 0                 ; 7       ;
+;      - count0[24]   ; 0                 ; 7       ;
+;      - count0[25]   ; 0                 ; 7       ;
+;      - count0[26]   ; 0                 ; 7       ;
+;      - count0[27]   ; 0                 ; 7       ;
+;      - codeoutv[0]  ; 0                 ; 7       ;
+;      - codeoutv[1]  ; 0                 ; 7       ;
++---------------------+-------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                           ;
-+---------------+--------------------+---------+-------------+--------+----------------------+------------------+---------------------------+
-; Name          ; Location           ; Fan-Out ; Usage       ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+---------------+--------------------+---------+-------------+--------+----------------------+------------------+---------------------------+
-; clk           ; PIN_N20            ; 47      ; Clock       ; yes    ; Global Clock         ; GCLK3            ; --                        ;
-; count0[29]~96 ; LCCOMB_X37_Y20_N14 ; 32      ; Sync. clear ; no     ; --                   ; --               ; --                        ;
-+---------------+--------------------+---------+-------------+--------+----------------------+------------------+---------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                         ;
++------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name       ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; clk        ; PIN_N20            ; 47      ; Clock        ; yes    ; Global Clock         ; GCLK3            ; --                        ;
+; clr        ; PIN_D6             ; 34      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; codeoutv~2 ; LCCOMB_X35_Y17_N26 ; 33      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
++------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
 +-------------------------------------------------------------------------------------------------+
@@ -903,60 +934,60 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 +---------------------------------+
 ; Non-Global High Fan-Out Signals ;
-+---------------+-----------------+
-; Name          ; Fan-Out         ;
-+---------------+-----------------+
-; count0[29]~96 ; 32              ;
-; codeoutv[1]   ; 5               ;
-; codeoutv[0]   ; 5               ;
-; clr           ; 3               ;
-; codein        ; 3               ;
-; Equal0~6      ; 3               ;
-; Equal0~1      ; 3               ;
-; Equal0~0      ; 3               ;
-; firstv        ; 3               ;
-; count1        ; 3               ;
-; s0[4]         ; 3               ;
-; s1[4]         ; 3               ;
-; flag1b        ; 2               ;
-; count0[17]    ; 2               ;
-; count0[13]    ; 2               ;
-; count0[7]     ; 2               ;
-; count0[1]     ; 2               ;
-; count0[15]    ; 2               ;
-; count0[5]     ; 2               ;
-; count0[27]    ; 2               ;
-; count0[11]    ; 2               ;
-; count0[20]    ; 2               ;
-; count0[2]     ; 2               ;
-; count0[24]    ; 2               ;
-; count0[10]    ; 2               ;
-; count0[22]    ; 2               ;
-; count0[8]     ; 2               ;
-; count0[16]    ; 2               ;
-; count0[6]     ; 2               ;
-; count0[18]    ; 2               ;
-; count0[30]    ; 2               ;
-; count0[23]    ; 2               ;
-; count0[9]     ; 2               ;
-; count0[19]    ; 2               ;
-; count0[4]     ; 2               ;
-; count0[14]    ; 2               ;
-; count0[0]     ; 2               ;
-; count0[28]    ; 2               ;
-; count0[21]    ; 2               ;
-; count0[25]    ; 2               ;
-; count0[29]    ; 2               ;
-; count0[3]     ; 2               ;
-; count0[31]    ; 2               ;
-; count0[26]    ; 2               ;
-; count0[12]    ; 2               ;
-; codeoutv~5    ; 1               ;
-; codeoutv~4    ; 1               ;
-; Equal0~5      ; 1               ;
-; Equal0~4      ; 1               ;
-; Equal0~3      ; 1               ;
-+---------------+-----------------+
++-------------+-------------------+
+; Name        ; Fan-Out           ;
++-------------+-------------------+
+; clr         ; 34                ;
+; codeoutv~2  ; 33                ;
+; codeoutv[1] ; 5                 ;
+; codeoutv[0] ; 5                 ;
+; firstv      ; 3                 ;
+; count1      ; 3                 ;
+; s0[4]       ; 3                 ;
+; s1[4]       ; 3                 ;
+; count0[20]  ; 3                 ;
+; codein      ; 2                 ;
+; Equal0~6    ; 2                 ;
+; Equal0~1    ; 2                 ;
+; Equal0~0    ; 2                 ;
+; flag1b      ; 2                 ;
+; count0[16]  ; 2                 ;
+; count0[12]  ; 2                 ;
+; count0[6]   ; 2                 ;
+; count0[0]   ; 2                 ;
+; count0[14]  ; 2                 ;
+; count0[4]   ; 2                 ;
+; count0[26]  ; 2                 ;
+; count0[10]  ; 2                 ;
+; count0[19]  ; 2                 ;
+; count0[1]   ; 2                 ;
+; count0[23]  ; 2                 ;
+; count0[9]   ; 2                 ;
+; count0[21]  ; 2                 ;
+; count0[7]   ; 2                 ;
+; count0[15]  ; 2                 ;
+; count0[5]   ; 2                 ;
+; count0[17]  ; 2                 ;
+; count0[29]  ; 2                 ;
+; count0[22]  ; 2                 ;
+; count0[8]   ; 2                 ;
+; count0[18]  ; 2                 ;
+; count0[3]   ; 2                 ;
+; count0[13]  ; 2                 ;
+; count0[31]  ; 2                 ;
+; count0[27]  ; 2                 ;
+; count0[24]  ; 2                 ;
+; count0[28]  ; 2                 ;
+; count0[2]   ; 2                 ;
+; count0[30]  ; 2                 ;
+; count0[25]  ; 2                 ;
+; count0[11]  ; 2                 ;
+; codeoutv~3  ; 1                 ;
+; Equal0~5    ; 1                 ;
+; Equal0~4    ; 1                 ;
+; Equal0~3    ; 1                 ;
+; Equal0~2    ; 1                 ;
++-------------+-------------------+
 
 
 +-------------------------------------------------------------------+
@@ -964,16 +995,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------+-----------------------+
 ; Interconnect Resource Type                ; Usage                 ;
 +-------------------------------------------+-----------------------+
-; Block interconnects                       ; 48 / 51,960 ( < 1 % ) ;
+; Block interconnects                       ; 52 / 51,960 ( < 1 % ) ;
 ; C16 interconnects                         ; 2 / 1,680 ( < 1 % )   ;
-; C4 interconnects                          ; 36 / 38,400 ( < 1 % ) ;
+; C4 interconnects                          ; 31 / 38,400 ( < 1 % ) ;
 ; DPA clocks                                ; 0 / 4 ( 0 % )         ;
 ; DQS bus muxes                             ; 0 / 18 ( 0 % )        ;
 ; DQS-18 I/O buses                          ; 0 / 4 ( 0 % )         ;
 ; DQS-4 I/O buses                           ; 0 / 18 ( 0 % )        ;
 ; DQS-9 I/O buses                           ; 0 / 8 ( 0 % )         ;
 ; Differential I/O clocks                   ; 0 / 32 ( 0 % )        ;
-; Direct links                              ; 5 / 51,960 ( < 1 % )  ;
+; Direct links                              ; 15 / 51,960 ( < 1 % ) ;
 ; Global clocks                             ; 1 / 16 ( 6 % )        ;
 ; Local interconnects                       ; 13 / 12,480 ( < 1 % ) ;
 ; NDQS bus muxes                            ; 0 / 18 ( 0 % )        ;
@@ -984,7 +1015,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; PLL transmitter or receiver synch. clocks ; 0 / 8 ( 0 % )         ;
 ; R24 interconnects                         ; 0 / 1,664 ( 0 % )     ;
 ; R24/C16 interconnect drivers              ; 0 / 4,160 ( 0 % )     ;
-; R4 interconnects                          ; 32 / 59,488 ( < 1 % ) ;
+; R4 interconnects                          ; 23 / 59,488 ( < 1 % ) ;
 ; Regional clocks                           ; 0 / 32 ( 0 % )        ;
 +-------------------------------------------+-----------------------+
 
@@ -992,9 +1023,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------+
 ; LAB Logic Elements                                             ;
 +----------------------------------+-----------------------------+
-; Number of ALMs  (Average = 3.33) ; Number of LABs  (Total = 9) ;
+; Number of ALMs  (Average = 3.63) ; Number of LABs  (Total = 8) ;
 +----------------------------------+-----------------------------+
-; 1                                ; 6                           ;
+; 1                                ; 5                           ;
 ; 2                                ; 0                           ;
 ; 3                                ; 0                           ;
 ; 4                                ; 0                           ;
@@ -1008,9 +1039,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------+
 ; LAB-wide Signals                                                 ;
 +------------------------------------+-----------------------------+
-; LAB-wide Signals  (Average = 0.67) ; Number of LABs  (Total = 9) ;
+; LAB-wide Signals  (Average = 1.25) ; Number of LABs  (Total = 8) ;
 +------------------------------------+-----------------------------+
-; 1 Clock                            ; 4                           ;
+; 1 Clock                            ; 5                           ;
+; 1 Clock enable                     ; 3                           ;
 ; 1 Sync. clear                      ; 2                           ;
 +------------------------------------+-----------------------------+
 
@@ -1018,11 +1050,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 7.22) ; Number of LABs  (Total = 9) ;
+; Number of Signals Sourced  (Average = 8.13) ; Number of LABs  (Total = 8) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
-; 1                                           ; 5                           ;
-; 2                                           ; 0                           ;
+; 1                                           ; 3                           ;
+; 2                                           ; 1                           ;
 ; 3                                           ; 1                           ;
 ; 4                                           ; 0                           ;
 ; 5                                           ; 0                           ;
@@ -1052,14 +1084,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 4.67) ; Number of LABs  (Total = 9) ;
+; Number of Signals Sourced Out  (Average = 5.25) ; Number of LABs  (Total = 8) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
-; 1                                               ; 6                           ;
+; 1                                               ; 5                           ;
 ; 2                                               ; 0                           ;
 ; 3                                               ; 0                           ;
-; 4                                               ; 1                           ;
-; 5                                               ; 0                           ;
+; 4                                               ; 0                           ;
+; 5                                               ; 1                           ;
 ; 6                                               ; 0                           ;
 ; 7                                               ; 0                           ;
 ; 8                                               ; 0                           ;
@@ -1077,7 +1109,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 5.33) ; Number of LABs  (Total = 9) ;
+; Number of Distinct Inputs  (Average = 6.38) ; Number of LABs  (Total = 8) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
@@ -1085,7 +1117,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 3                                           ; 1                           ;
 ; 4                                           ; 1                           ;
 ; 5                                           ; 2                           ;
-; 6                                           ; 2                           ;
+; 6                                           ; 1                           ;
 ; 7                                           ; 0                           ;
 ; 8                                           ; 0                           ;
 ; 9                                           ; 0                           ;
@@ -1094,7 +1126,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 12                                          ; 0                           ;
 ; 13                                          ; 0                           ;
 ; 14                                          ; 0                           ;
-; 15                                          ; 1                           ;
+; 15                                          ; 0                           ;
+; 16                                          ; 0                           ;
+; 17                                          ; 0                           ;
+; 18                                          ; 0                           ;
+; 19                                          ; 0                           ;
+; 20                                          ; 0                           ;
+; 21                                          ; 0                           ;
+; 22                                          ; 0                           ;
+; 23                                          ; 0                           ;
+; 24                                          ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -1214,7 +1255,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Fitter
     Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
-    Info: Processing started: Mon Jun 28 19:11:58 2021
+    Info: Processing started: Wed Jun 30 10:51:27 2021
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off HDB3 -c HDB3
 Info: Automatically selected device EP2S15F484C3 for design HDB3
 Info: Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
@@ -1257,21 +1298,20 @@ Info: I/O bank details before I/O pin placement
         Info: I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  43 pins available
         Info: I/O bank number 9 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  6 pins available
         Info: I/O bank number 10 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  6 pins available
-Info: Fitter preparation operations ending: elapsed time is 00:00:01
+Info: Fitter preparation operations ending: elapsed time is 00:00:00
 Info: Fitter placement preparation operations beginning
 Info: Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info: Fitter placement operations beginning
 Info: Fitter placement was successful
 Info: Fitter placement operations ending: elapsed time is 00:00:00
-Info: Estimated most critical path is register to register delay of 3.751 ns
-    Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LAB_X34_Y20; Fanout = 3; REG Node = 'count0[20]'
-    Info: 2: + IC(0.732 ns) + CELL(0.272 ns) = 1.004 ns; Loc. = LAB_X38_Y21; Fanout = 1; COMB Node = 'Equal0~3'
-    Info: 3: + IC(0.396 ns) + CELL(0.378 ns) = 1.778 ns; Loc. = LAB_X37_Y20; Fanout = 1; COMB Node = 'Equal0~5'
-    Info: 4: + IC(0.247 ns) + CELL(0.154 ns) = 2.179 ns; Loc. = LAB_X37_Y20; Fanout = 3; COMB Node = 'Equal0~6'
-    Info: 5: + IC(0.247 ns) + CELL(0.154 ns) = 2.580 ns; Loc. = LAB_X37_Y20; Fanout = 32; COMB Node = 'count0[29]~96'
-    Info: 6: + IC(0.774 ns) + CELL(0.397 ns) = 3.751 ns; Loc. = LAB_X34_Y21; Fanout = 3; REG Node = 'count0[12]'
-    Info: Total cell delay = 1.355 ns ( 36.12 % )
-    Info: Total interconnect delay = 2.396 ns ( 63.88 % )
+Info: Estimated most critical path is register to register delay of 3.073 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LAB_X34_Y16; Fanout = 3; REG Node = 'count0[17]'
+    Info: 2: + IC(0.704 ns) + CELL(0.272 ns) = 0.976 ns; Loc. = LAB_X37_Y17; Fanout = 1; COMB Node = 'Equal0~2'
+    Info: 3: + IC(0.367 ns) + CELL(0.357 ns) = 1.700 ns; Loc. = LAB_X35_Y17; Fanout = 2; COMB Node = 'Equal0~6'
+    Info: 4: + IC(0.247 ns) + CELL(0.154 ns) = 2.101 ns; Loc. = LAB_X35_Y17; Fanout = 33; COMB Node = 'codeoutv~2'
+    Info: 5: + IC(0.575 ns) + CELL(0.397 ns) = 3.073 ns; Loc. = LAB_X34_Y16; Fanout = 4; REG Node = 'count0[20]'
+    Info: Total cell delay = 1.180 ns ( 38.40 % )
+    Info: Total interconnect delay = 1.893 ns ( 61.60 % )
 Info: Fitter routing operations beginning
 Info: Average interconnect usage is 0% of the available device resources
     Info: Peak interconnect usage is 0% of the available device resources in the region that extends from location X27_Y14 to location X40_Y27
@@ -1287,8 +1327,8 @@ Info: Delay annotation completed successfully
 Warning: The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info: Quartus II Fitter was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 287 megabytes
-    Info: Processing ended: Mon Jun 28 19:12:00 2021
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Wed Jun 30 10:51:30 2021
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 
